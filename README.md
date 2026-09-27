@@ -1,6 +1,6 @@
 # GitHub Issue Dashboard
 
-Automated dashboard showing open issues and PRs across all my GitHub repositories, including forks and upstream contributions.
+Automated dashboard showing open issues and PRs across all your GitHub repositories, including forks and upstream contributions.
 
 ## 📊 [View Dashboard](https://slmingol.github.io/github-issue-dashboard/)
 
@@ -8,24 +8,21 @@ Automated dashboard showing open issues and PRs across all my GitHub repositorie
 
 - 🔄 Auto-updates hourly via GitHub Actions
 - 📈 Own repos: issues + open PRs in one view per repo
-- 🔀 Upstream PRs: tracks my open PRs on upstream repos (prominent, open by default)
-- 📋 Upstream issues: top 30 per repo (collapsed by default, not in the way)
-- 🏷️ Displays labels, assignees, milestones per issue/PR
+- 🔀 Upstream PRs: tracks your open PRs on upstream repos (prominent, open by default)
+- 📋 Upstream issues: top 30 per repo (collapsed by default)
+- 🏷️ Labels, assignees, milestones per issue/PR
 - ⏰ Issue age with color-coded staleness indicators
-- 🔗 Direct links to each issue/PR
 - 🎯 Priority detection from labels (critical/p0 → high/p1 → medium/p2 → low/p3)
 - ✅ CI check status on PRs (pass/fail/pending badge next to review decision)
-- 🆕 NEW badge on issues/PRs that appeared since the last run (state diff)
-- 🔍 Client-side filtering by type, age, priority, source, and CI status
-- 🔎 Live text search across issue/PR titles
-- ↕️ Sort by newest, oldest, or priority
-- ⊞ Expand All / Collapse All repo sections
-- ⬇️ Export visible rows to CSV or JSON (includes CI status column)
-- ⚡ Parallel API fetching (up to 8 concurrent jobs) for fast generation
-- ↺ Per-repo live refresh: fetches GitHub data instantly via GraphQL, no CI trigger needed
-- 💾 Live refresh persists across page reloads via localStorage (auto-invalidated when CI rebuilds)
+- 🆕 NEW badge on issues/PRs that appeared since the last run
 - ⏳ Waiting-on tags per PR: **Your turn** / **Their turn** / **Ready** based on review state
   - `CHANGES_REQUESTED` + commits pushed after the review → **Their turn** (smart heuristic)
+- 🔍 Client-side filtering by type, age, priority, source, and CI status
+- 🔎 Live text search across titles
+- ↺ Per-repo live refresh via GraphQL — no CI trigger needed
+- 💾 Live refresh persists across reloads via localStorage (invalidated when CI rebuilds)
+- ⬇️ Export visible rows to CSV or JSON
+- ⚡ Parallel API fetching (up to 8 concurrent jobs)
 - 🚫 Renovate "Dependency Dashboard" meta-issues hidden automatically
 
 ## Dashboard Sections
@@ -36,26 +33,78 @@ Automated dashboard showing open issues and PRs across all my GitHub repositorie
 | My PRs on Upstream | Open | PRs you authored on upstream repos |
 | Upstream Issues | Collapsed | Top 30 upstream issues (muted) |
 
+## Setup
+
+### 1. Fork or copy this repo
+
+Fork `slmingol/github-issue-dashboard` into your own account, or create a new repo and copy the contents.
+
+### 2. Set your username
+
+Edit `scripts/generate-dashboard.sh` line 8:
+
+```bash
+USERNAME="your-github-username"
+```
+
+### 3. Enable GitHub Pages
+
+In your repo → **Settings → Pages**:
+
+- **Source**: Deploy from a branch
+- **Branch**: `main`, folder `/docs`
+
+The dashboard URL will be `https://<your-username>.github.io/github-issue-dashboard/`.
+
+### 4. Allow Actions to write to the repo
+
+In your repo → **Settings → Actions → General → Workflow permissions**:
+
+- Select **Read and write permissions**
+
+This lets the workflow commit the generated `docs/index.html` back to `main`.
+
+### 5. Trigger the first run
+
+Push any change or go to **Actions → Update Issue Dashboard → Run workflow**.
+
+The workflow runs hourly after that. It uses `GITHUB_TOKEN` automatically — no secrets to configure for CI.
+
+### Prerequisites (local runs only)
+
+To run `./scripts/generate-dashboard.sh` locally:
+
+```bash
+brew install gh jq          # macOS
+gh auth login               # authenticate once
+```
+
+Linux: install `gh` from [cli.github.com](https://cli.github.com) and `jq` via your package manager.
+
+## Live Refresh (per-repo ↺ button)
+
+The ↺ button on each repo header fetches live data directly from GitHub's GraphQL API — no CI trigger, instant results.
+
+It requires a **personal access token (classic)** with `repo` scope, entered once in the browser modal. The token is stored in `localStorage` (never leaves your browser) and is only used for client-side GraphQL calls.
+
+To generate a token: GitHub → **Settings → Developer settings → Personal access tokens → Tokens (classic)** → New token → check `repo`.
+
 ## How It Works
 
 1. GitHub Actions runs hourly
 2. Script fetches all repos (detects forks via `isFork`/`parent` fields)
-3. For forks: fetches own issues + PRs, plus your authored PRs on each upstream
-4. Generates `docs/index.html` published to GitHub Pages
-5. Commits and pushes changes automatically
-6. A monthly keepalive workflow re-enables any workflows GitHub auto-disabled due to inactivity
+3. For own repos: fetches open issues + PRs; for `CHANGES_REQUESTED` PRs also fetches review and commit timestamps to determine waiting direction
+4. For forks: fetches your authored PRs on each upstream repo
+5. Generates `docs/index.html` and `docs/state.json`, commits and pushes
+6. A monthly keepalive workflow re-enables workflows GitHub auto-disabled due to inactivity
 
 ## Manual Update
-
-To manually update the dashboard:
 
 ```bash
 ./scripts/generate-dashboard.sh
 ```
 
-## Setup
-
-This dashboard uses GitHub CLI (`gh`) to fetch data. The GitHub Actions workflow uses `GITHUB_TOKEN` automatically provided by GitHub Actions.
+Requires `gh` authenticated and `jq` installed.
 
 ---
 
