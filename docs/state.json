@@ -16,7 +16,6 @@
       3,
       2
     ],
-    "slmingol/automated-pr-demo": [],
     "slmingol/band-on-the-run": [
       22,
       21,
@@ -84,7 +83,6 @@
       99,
       83
     ],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -126,6 +124,7 @@
       2,
       1
     ],
+    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -157,9 +156,6 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/automated-pr-demo": [
-      1
-    ],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
@@ -172,12 +168,6 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [
-      14,
-      13,
-      12,
-      11
-    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -186,17 +176,14 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/repo-report-card-extension": [
-      22,
-      21
+    "slmingol/pangolin-cli": [
+      30
     ],
+    "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      130,
-      128
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -226,6 +213,7 @@
       84
     ],
     "Pouzor/homelable": [
+      537,
       514,
       504,
       434,
@@ -347,7 +335,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
