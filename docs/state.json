@@ -124,7 +124,6 @@
       2,
       1
     ],
-    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -176,9 +175,6 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pangolin-cli": [
-      30
-    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
@@ -250,7 +246,6 @@
       333
     ],
     "VeerMuchandi/time": [],
-    "acantril/learn-cantrill-io-labs": [],
     "adriannovegil/awesome-observability": [],
     "ahmedtariq01/Cloud-DevOps-Learning-Resources": [],
     "airsonic-advanced/airsonic-advanced": [
@@ -274,6 +269,7 @@
     "crazy-max/diun": [
       1813
     ],
+    "debpalash/VoiceStudio": [],
     "devopsgroup-io/vagrant-hostmanager": [],
     "docker/awesome-compose": [],
     "dockersamples/example-voting-app": [],
