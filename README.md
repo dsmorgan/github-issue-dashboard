@@ -39,15 +39,7 @@ Automated dashboard showing open issues and PRs across all your GitHub repositor
 
 Fork `slmingol/github-issue-dashboard` into your own account, or create a new repo and copy the contents.
 
-### 2. Set your username
-
-Edit `scripts/generate-dashboard.sh` line 8:
-
-```bash
-USERNAME="your-github-username"
-```
-
-### 3. Enable GitHub Pages
+### 2. Enable GitHub Pages
 
 In your repo → **Settings → Pages**:
 
