@@ -5,7 +5,7 @@
 
 OUTPUT_FILE="docs/index.html"
 STATE_FILE="docs/state.json"
-USERNAME="slmingol"
+USERNAME=$(gh api user --jq .login)
 MAX_PARALLEL=8
 
 mkdir -p docs
@@ -28,7 +28,7 @@ FORK_COUNT=$(echo "$ALL_REPO_DATA" | jq '[.[] | select(.isFork)] | length')
 UPSTREAM_PAIRS=$(echo "$ALL_REPO_DATA" | \
   jq -r '.[] | select(.isFork and (.parent != null)) | "\(.parent.owner.login)/\(.parent.name)|\(.name)"' | sort -u)
 
-# Repos where slmingol has open PRs but doesn't own (org repos, third-party contributions)
+# Repos where $USERNAME has open PRs but doesn't own (org repos, third-party contributions)
 CONTRIBUTED_REPOS=$(gh search prs --author "$USERNAME" --state open --limit 100 --json repository \
   2>/dev/null | jq -r '.[].repository.nameWithOwner' | sort -u | \
   grep -v "^${USERNAME}/" || true)
@@ -973,13 +973,17 @@ UIS_HDR
 fi
 
 # ── footer + JS ───────────────────────────────────────────────────────────────
-cat >> "$OUTPUT_FILE" << 'HTML_FOOT'
+cat >> "$OUTPUT_FILE" << HTML_FOOT_META
 <footer>
   Powered by GitHub Actions &mdash; updates hourly &mdash;
-  <a href="https://github.com/slmingol/github-issue-dashboard">View Repository</a>
+  <a href="https://github.com/$USERNAME/github-issue-dashboard">View Repository</a>
 </footer>
 
 <script>
+const _DASHBOARD_USER = '$USERNAME';
+const _DASHBOARD_REPO = '$USERNAME/github-issue-dashboard';
+HTML_FOOT_META
+cat >> "$OUTPUT_FILE" << 'HTML_FOOT'
 const filters = { type:'all', age:'all', priority:'all', source:'all', ci:'all' };
 
 function setFilter(f, val, btn) {
@@ -1114,7 +1118,7 @@ function dlBlob(name, content, type) {
 applyFilters();
 
 // ── refresh button ────────────────────────────────────────────────────────────
-const REPO = 'slmingol/github-issue-dashboard';
+const REPO = _DASHBOARD_REPO;
 const WORKFLOW = 'update-dashboard.yml';
 const TOKEN_KEY = 'gh_dashboard_token';
 
@@ -1248,7 +1252,7 @@ function doRepoRefresh(btn, repo, mode, token) {
       for(const iss of issues) html+=buildIssueRow(iss,name);
     }
     let prs=[...rd.pullRequests.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
-    if(mode==='upstream') prs=prs.filter(pr=>pr.author&&pr.author.login==='slmingol');
+    if(mode==='upstream') prs=prs.filter(pr=>pr.author&&pr.author.login===_DASHBOARD_USER);
     const prSlug = mode==='upstream' ? 'uppr-'+repo.replace('/','-') : name;
     for(const pr of prs) html+=buildPrRow(pr,prSlug);
     tbody.innerHTML=html;
