@@ -141,7 +141,6 @@
       28
     ],
     "slmingol/tokentelemetry": [],
-    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
@@ -209,9 +208,6 @@
     ],
     "slmingol/tokentelemetry": [
       5
-    ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      24
     ],
     "slmingol/uptime-kuma-sync-n-bak": [
       19
