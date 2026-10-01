@@ -48,7 +48,7 @@ In your repo → **Settings → Pages**:
 
 The dashboard URL will be `https://<your-username>.github.io/github-issue-dashboard/`.
 
-### 4. Allow Actions to write to the repo
+### 3. Allow Actions to write to the repo
 
 In your repo → **Settings → Actions → General → Workflow permissions**:
 
@@ -56,11 +56,11 @@ In your repo → **Settings → Actions → General → Workflow permissions**:
 
 This lets the workflow commit the generated `docs/index.html` back to `main`.
 
-### 5. Trigger the first run
+### 4. Trigger the first run
 
 Push any change or go to **Actions → Update Issue Dashboard → Run workflow**.
 
-The workflow runs hourly after that. It uses `GITHUB_TOKEN` automatically — no secrets to configure for CI.
+The workflow runs hourly after that. It uses `GITHUB_TOKEN` automatically — no secrets to configure for CI. Your GitHub username is detected automatically from `GITHUB_REPOSITORY_OWNER`.
 
 ### Prerequisites (local runs only)
 
