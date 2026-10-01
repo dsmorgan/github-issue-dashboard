@@ -5,7 +5,7 @@
 
 OUTPUT_FILE="docs/index.html"
 STATE_FILE="docs/state.json"
-USERNAME=$(gh api user --jq .login)
+USERNAME="${GITHUB_REPOSITORY_OWNER:-$(gh api user --jq .login)}"
 MAX_PARALLEL=8
 
 mkdir -p docs
