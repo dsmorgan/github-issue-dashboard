@@ -124,6 +124,7 @@
       2,
       1
     ],
+    "slmingol/pr-dashboard": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -176,6 +177,9 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/pr-dashboard": [
+      40
+    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
