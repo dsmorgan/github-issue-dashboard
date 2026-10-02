@@ -156,20 +156,14 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      41
-    ],
+    "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      40
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      47
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -182,13 +176,16 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/repo-report-card-extension": [],
+    "slmingol/repo-report-card-extension": [
+      23
+    ],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [
-      141,
-      140
+      143,
+      142,
+      141
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -349,11 +346,6 @@
     "rootsongjc/awesome-cloud-native": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
-    "sipcapture/captagent": [
-      329,
-      328,
-      327
-    ],
     "srefsland/nyt-connections-clone": [
       13
     ],
