@@ -176,17 +176,11 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/repo-report-card-extension": [
-      23
-    ],
+    "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      143,
-      142,
-      141
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -343,7 +337,6 @@
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
     "robusta-dev/kubernetes-chatgpt-bot": [],
-    "rootsongjc/awesome-cloud-native": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
     "srefsland/nyt-connections-clone": [
