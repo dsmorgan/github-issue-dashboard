@@ -42,15 +42,6 @@
       7,
       2,
       1
-    ],
-    "dsmorgan/tls-automation": [
-      8,
-      7,
-      6,
-      5,
-      4,
-      3,
-      2
     ]
   },
   "own_prs": {
@@ -59,8 +50,7 @@
       351
     ],
     "dsmorgan/patchbay": [],
-    "dsmorgan/solomog": [],
-    "dsmorgan/tls-automation": []
+    "dsmorgan/solomog": []
   },
   "upstream_prs": {
     "dockersamples/example-voting-app": [],
