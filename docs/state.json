@@ -124,7 +124,8 @@
       2,
       1
     ],
-    "slmingol/pr-dashboard": [],
+    "slmingol/opnsense-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -159,7 +160,9 @@
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      41
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -177,14 +180,19 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pr-dashboard": [
-      40
+    "slmingol/opnsense-cli": [
+      31
+    ],
+    "slmingol/pfsense-cli": [
+      47
     ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      146
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
