@@ -331,7 +331,10 @@
     "langchain-ai/local-deep-researcher": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
-    "mosswg/dropout-dl": [],
+    "mosswg/dropout-dl": [
+      53,
+      52
+    ],
     "nicolaka/netshoot": [],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
