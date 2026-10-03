@@ -2,7 +2,7 @@
 
 Automated dashboard showing open issues and PRs across all your GitHub repositories, including forks and upstream contributions.
 
-## 📊 [View Dashboard](https://slmingol.github.io/github-issue-dashboard/)
+## 📊 [View Dashboard](https://dsmorgan.github.io/github-issue-dashboard/)
 
 ## Features
 
