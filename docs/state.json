@@ -180,9 +180,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      147
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -329,6 +327,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "mosswg/dropout-dl": [
@@ -345,7 +344,12 @@
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
     "srefsland/nyt-connections-clone": [
-      13
+      19,
+      18,
+      17,
+      16,
+      15,
+      14
     ],
     "stefanprodan/dockprom": [],
     "stefanprodan/podinfo": [],
