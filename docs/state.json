@@ -1,7 +1,6 @@
 {
   "own_issues": {
     "dsmorgan/netkeeper": [
-      497,
       494,
       493,
       488,
@@ -43,9 +42,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/netkeeper": [
-      498
-    ],
+    "dsmorgan/netkeeper": [],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
   },
