@@ -42,7 +42,10 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/netkeeper": [],
+    "dsmorgan/netkeeper": [
+      504,
+      503
+    ],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
   },
