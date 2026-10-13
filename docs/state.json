@@ -47,7 +47,10 @@
       504,
       503
     ],
-    "dsmorgan/patchbay": [],
+    "dsmorgan/patchbay": [
+      92,
+      91
+    ],
     "dsmorgan/solomog": []
   },
   "upstream_prs": {
