@@ -1,6 +1,7 @@
 {
   "own_issues": {
     "dsmorgan/netkeeper": [
+      661,
       660,
       659,
       656,
@@ -8,8 +9,6 @@
       653,
       652,
       651,
-      641,
-      636,
       631,
       611,
       610,
@@ -30,7 +29,8 @@
       530,
       523,
       521,
-      507
+      507,
+      488
     ],
     "dsmorgan/patchbay": [
       86,
@@ -48,10 +48,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/netkeeper": [
-      658,
-      650
-    ],
+    "dsmorgan/netkeeper": [],
     "dsmorgan/patchbay": [
       92,
       91
