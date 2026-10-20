@@ -3,9 +3,6 @@
     "dsmorgan/netkeep": [
       730,
       725,
-      710,
-      709,
-      707,
       693,
       687,
       677,
@@ -30,7 +27,10 @@
       523,
       521,
       507,
-      488
+      488,
+      487,
+      486,
+      430
     ],
     "dsmorgan/patchbay": [
       86,
@@ -48,11 +48,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/netkeep": [
-      731,
-      729,
-      728
-    ],
+    "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [
       92,
       91
