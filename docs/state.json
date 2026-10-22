@@ -1,6 +1,8 @@
 {
   "own_issues": {
     "dsmorgan/netkeep": [
+      755,
+      754,
       744,
       735,
       730,
@@ -28,18 +30,10 @@
       523,
       521,
       507,
-      488,
-      487,
-      486
+      488
     ],
     "dsmorgan/patchbay": [
-      99,
-      98,
-      97,
-      96,
-      95,
-      94,
-      93,
+      117,
       86,
       83,
       69,
@@ -56,17 +50,11 @@
   },
   "own_prs": {
     "dsmorgan/netkeep": [
+      758,
+      756,
       743
     ],
-    "dsmorgan/patchbay": [
-      105,
-      104,
-      103,
-      102,
-      101,
-      100,
-      91
-    ],
+    "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
   },
   "upstream_prs": {
