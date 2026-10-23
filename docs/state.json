@@ -1,6 +1,5 @@
 {
   "own_issues": {
-    "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [
       769,
       768,
@@ -48,9 +47,6 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [
-      5
-    ],
     "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
