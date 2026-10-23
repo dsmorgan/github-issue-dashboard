@@ -10,7 +10,6 @@
       764,
       763,
       762,
-      761,
       760,
       744,
       735,
@@ -31,7 +30,8 @@
       604,
       594,
       585,
-      579
+      579,
+      578
     ],
     "dsmorgan/patchbay": [
       86,
@@ -51,7 +51,9 @@
     "dsmorgan/dinnerbell": [
       1
     ],
-    "dsmorgan/netkeep": [],
+    "dsmorgan/netkeep": [
+      770
+    ],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
   },
