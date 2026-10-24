@@ -1,6 +1,12 @@
 {
   "own_issues": {
     "dsmorgan/dinnerbell": [
+      42,
+      38,
+      36,
+      35,
+      34,
+      33,
       19,
       18,
       17,
@@ -10,7 +16,6 @@
       13,
       12,
       11,
-      10,
       9,
       8,
       7
@@ -62,7 +67,10 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [],
+    "dsmorgan/dinnerbell": [
+      41,
+      40
+    ],
     "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
