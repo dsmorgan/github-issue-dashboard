@@ -62,10 +62,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [
-      26,
-      25
-    ],
+    "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
