@@ -3,8 +3,6 @@
     "dsmorgan/dinnerbell": [
       58,
       57,
-      56,
-      54,
       51,
       44,
       38,
@@ -72,9 +70,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [
-      55
-    ],
+    "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [],
     "dsmorgan/solomog": []
