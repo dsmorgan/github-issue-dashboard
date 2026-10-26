@@ -86,7 +86,10 @@
       773,
       772
     ],
-    "dsmorgan/patchbay": [],
+    "dsmorgan/patchbay": [
+      131,
+      130
+    ],
     "dsmorgan/solomog": []
   },
   "upstream_prs": {
