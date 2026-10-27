@@ -78,7 +78,9 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [],
+    "dsmorgan/dinnerbell": [
+      82
+    ],
     "dsmorgan/netkeep": [
       777,
       776,
