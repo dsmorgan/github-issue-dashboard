@@ -1,10 +1,10 @@
 {
   "own_issues": {
     "dsmorgan/dinnerbell": [
-      78,
+      87,
+      85,
       76,
       73,
-      72,
       70,
       58,
       57,
@@ -78,9 +78,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [
-      82
-    ],
+    "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [
       777,
       776,
