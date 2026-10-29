@@ -2,12 +2,8 @@
   "own_issues": {
     "dsmorgan/dinnerbell": [
       106,
-      99,
       93,
-      73,
       57,
-      38,
-      36,
       35,
       34,
       33,
@@ -15,19 +11,10 @@
       18,
       17,
       16,
-      14,
-      13,
-      12,
-      11,
-      9,
-      8,
-      7
+      14
     ],
     "dsmorgan/netkeep": [
       789,
-      785,
-      784,
-      783,
       769,
       768,
       767,
@@ -53,7 +40,10 @@
       585,
       579,
       578,
-      577
+      577,
+      556,
+      530,
+      523
     ],
     "dsmorgan/patchbay": [
       129,
@@ -74,16 +64,10 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [],
-    "dsmorgan/netkeep": [
-      788,
-      777,
-      776,
-      775,
-      774,
-      773,
-      772
+    "dsmorgan/dinnerbell": [
+      120
     ],
+    "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [
       131,
       130
