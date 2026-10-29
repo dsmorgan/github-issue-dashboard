@@ -4,7 +4,6 @@
       106,
       93,
       57,
-      35,
       34,
       33,
       19,
@@ -64,9 +63,7 @@
     ]
   },
   "own_prs": {
-    "dsmorgan/dinnerbell": [
-      120
-    ],
+    "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [],
     "dsmorgan/patchbay": [
       131,
