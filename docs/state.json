@@ -76,7 +76,9 @@
       131,
       130
     ],
-    "dsmorgan/solomog": []
+    "dsmorgan/solomog": [
+      10
+    ]
   },
   "upstream_prs": {
     "dockersamples/example-voting-app": [],
