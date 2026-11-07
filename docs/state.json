@@ -1,7 +1,6 @@
 {
   "own_issues": {
     "dsmorgan/dinnerbell": [
-      212,
       138,
       93,
       57,
@@ -42,13 +41,7 @@
       487
     ],
     "dsmorgan/patchbay": [
-      129,
-      128,
-      127,
-      126,
-      125,
       86,
-      83,
       25,
       24
     ],
@@ -62,15 +55,8 @@
   "own_prs": {
     "dsmorgan/dinnerbell": [],
     "dsmorgan/netkeep": [],
-    "dsmorgan/patchbay": [
-      141,
-      140,
-      139,
-      137
-    ],
-    "dsmorgan/solomog": [
-      10
-    ]
+    "dsmorgan/patchbay": [],
+    "dsmorgan/solomog": []
   },
   "upstream_prs": {
     "dockersamples/example-voting-app": [],
